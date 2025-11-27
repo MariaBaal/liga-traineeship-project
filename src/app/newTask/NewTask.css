@@ -1,0 +1,76 @@
+.add-task-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  padding: 0 20px;
+}
+
+.add-task-page__title {
+  margin: 10px 0;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 8px;
+  padding: 25px 30px;
+  border-radius: 20px;
+  background-color: #c5e7ff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.task-form__input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #cfddeb;
+  background: white;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-form__input:focus {
+  border-color: #4a8eff;
+  box-shadow: 0 0 6px rgba(74, 142, 255, 0.5);
+  outline: none;
+}
+
+.error {
+  color: #ff4b4b;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.task-form__input.error-border {
+  border-color: #ff4b4b;
+  box-shadow: 0 0 6px rgba(255, 75, 75, 0.4);
+}
+
+button[type="submit"] {
+  padding: 12px 18px;
+  background-color: #4a8eff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #2f74e2;
+}
+
+button[type="submit"]:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+button[type="submit"]:disabled {
+  background-color: #8cb6f1;
+  cursor: not-allowed;
+}

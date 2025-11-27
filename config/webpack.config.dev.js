@@ -32,6 +32,9 @@ const devWebpackConfig = merge(BaseConfig, {
     historyApiFallback: {
       disableDotRule: true,
       index: publicUrlOrPath,
+      rewrites: [
+        { from: /^\/assets\/icons\/.*$/, to: context => context.parsedUrl.pathname },
+      ],
     },
     client: {
       progress: true,

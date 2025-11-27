@@ -1,0 +1,47 @@
+.task-column {
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.task-column--active {
+  background-color: #FFF5ED;
+}
+
+.task-column--important {
+  background-color: #FFEEEE;
+}
+
+.task-column--done {
+  background-color: #ECFFEB;
+}
+
+.task-column__title {
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.task-column__title-text {
+  font-size: 16px;
+}
+
+.task-column__title--active {
+  background-color: #FFDEC1;
+  color: #CC6D19;
+}
+
+.task-column__title--important {
+  background-color: #FFC9C9;
+  color: #E2433E;
+}
+
+.task-column__title--done {
+  background-color: #CBFFBD;
+  color: #39BF21;
+}
+
+.task-column__empty {
+  margin: 0 5px;
+  color: #6e6e6e;
+}

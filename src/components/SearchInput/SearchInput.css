@@ -2,16 +2,31 @@
   position: relative;
 }
 
-.search-input {
-  width: auto;
-  flex-grow: 1;
-  margin-right: 3px;
-}
-
 .close {
   position: absolute;
-  top: 6px;
-  right: 10px;
+  top: 11px;
+  right: 15px;
   border: none;
   background-color: inherit;
+  color: #5E6169;
+}
+
+.search {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 2fr auto;
+  gap: 5px;
+  justify-content: center;
+  background-color: #ECECEC;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.search__input {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  outline: none;
 }

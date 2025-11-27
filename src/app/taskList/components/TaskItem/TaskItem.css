@@ -1,0 +1,104 @@
+.task-item {
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.task-item__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.task-item__label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.task-item__description {
+  font-size: 16px;
+  color: #606060;
+  width: 95%;
+}
+
+.task-item__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.task-item__button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.task-item__button--edit {
+  background-color: #3E9BDD;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.task-item__button--done {
+  background-color: #34C759;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px
+}
+
+.task-item__button--edit:hover {
+  background-color: #2980BF;
+  color: #fff;
+}
+
+.task-item__button--done:hover {
+  background-color: #2AA74A;
+}
+
+.task-item__button--delete {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  color: #FF383C;
+}
+
+.task-item__button--delete svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.task-item__button--delete svg:hover {
+  transform: scale(125%);
+}
+
+.task-item__button--completed {
+  background-color: #CBFFBD;
+  color: #39BF21;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.task-item__button--cancel {
+  background-color: #fa2222;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-left: auto;
+  width: 113px;
+}

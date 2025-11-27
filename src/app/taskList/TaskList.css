@@ -1,0 +1,41 @@
+.task-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px
+}
+
+.task-list__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list__button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+.task-list__button--add {
+  background-color: #3e9bdd;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.task-list__button--add:hover {
+  background-color: #3172a1;
+  color: #fff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  margin: 200px;
+}

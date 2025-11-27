@@ -109,7 +109,7 @@ module.exports = {
             loader: 'svg-sprite-loader',
             options: {
               extract: true,
-              publicPath: `./assets/icons/`,
+              publicPath: `/assets/icons/`,
             },
           },
           'svg-transform-loader',
@@ -172,19 +172,19 @@ module.exports = {
       template: `${src}/index.html`,
       ...(isProduction
         ? {
-            minify: {
-              removeComments: true,
-              collapseWhitespace: true,
-              removeRedundantAttributes: true,
-              useShortDoctype: true,
-              removeEmptyAttributes: true,
-              removeStyleLinkTypeAttributes: true,
-              keepClosingSlash: true,
-              minifyJS: true,
-              minifyCSS: true,
-              minifyURLs: true,
-            },
-          }
+          minify: {
+            removeComments: true,
+            collapseWhitespace: true,
+            removeRedundantAttributes: true,
+            useShortDoctype: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            keepClosingSlash: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true,
+          },
+        }
         : undefined),
     }),
     new ForkTsCheckerWebpackPlugin({
